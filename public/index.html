@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mail Form Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="block-1">
+        <h1 class="title"><u>Mail Form Test</u></h1>
+        <h3 class="title">Testing Nodemailer, Hoping the test works😅</h3>
+
+        <form class="form" method="POST" action="/form-handler">
+            <label for="name">What is your name?</label>
+            <input class="u-full-width" type="text" name="name">
+            <label for="age">What is your age?</label>
+            <input class="u-full-width" type="number" name="age">
+            <label for="email">Enter your Email:</label>
+            <input class="u-full-width" type="email" name="email">
+            <button class="button-primary">Submit</button>
+        </form>
+    </div>
+
+    <div id="block-2">
+        <h1 class="title"><u>Submitted Successfully!!</u></h1>
+        <h3 class="title" id="text-1"></h3>
+        <h3 class="title" id="text-2"></h3>
+    </div>
+
+    <div id="block-3">
+        <h1 class="title"><u>Oh No!!</u></h1>
+        <h3 class="title">It Appears We Run Into an <u>Error</u>😥</h3>
+        <h5 class="title">Please Contact the Administrator Salman Hasan</h5>
+        <p class="title">Sorry For the Inconvenience😅</p>
+    </div>
+    <script src="client.js"></script>
+</body>
+
+</html>
